@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="features">
+        <p>Fast performance</p>
+        <p>User-friendly </p>
+        <p>Secure </p>
+    </div>
+
+    <script>
+        const featuresDiv = document.getElementById("features");
+
+        const paragraphs = featuresDiv.getElementsByTagName("p");
+
+        for (let i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].textContent = `✓ ${paragraphs[i].textContent}`;
+        }
+    </script>
+
+</body>
+
+</html>
