@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 - Shopping List</title>
+</head>
+
+<body>
+
+    <h2>Shopping</h2>
+    <ul id="shopping-list"></ul>
+
+    <script>
+        window.onload = function () {
+            const ul = document.getElementById("shopping-list");
+            const items = ["Item A", "Item B", "Item C"];
+
+            items.forEach(itemText => {
+                const li = document.createElement("li");
+                li.textContent = itemText;
+                ul.appendChild(li);
+            });
+        };
+    </script>
+
+</body>
+
+</html>
